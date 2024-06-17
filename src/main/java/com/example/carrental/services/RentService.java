@@ -1,8 +1,8 @@
 package com.example.carrental.services;
 
-import com.example.carrental.Exceptions.CarNotAvailableException;
-import com.example.carrental.Exceptions.NoCarFound;
-import com.example.carrental.Exceptions.NoUserFound;
+import com.example.carrental.exceptions.CarNotAvailableException;
+import com.example.carrental.exceptions.NoCarFound;
+import com.example.carrental.exceptions.NoUserFound;
 import com.example.carrental.models.Availability;
 import com.example.carrental.models.Car;
 import com.example.carrental.models.Ticket;

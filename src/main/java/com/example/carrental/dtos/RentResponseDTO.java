@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class RentResponseDTO {
 
-    private long id;
+    private long ticket_id;
     private double expectedAmount;
     private String car;
     private String userName;

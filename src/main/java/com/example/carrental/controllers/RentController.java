@@ -22,12 +22,10 @@ public class RentController {
     public @ResponseBody RentResponseDTO rentACar(@RequestBody RentRequestDTO reqDTO){
         Ticket t  = rs.rentCarMethod(reqDTO.getUserID(),reqDTO.getCarID(), reqDTO.getNumberOfDays());
         return RentResponseDTO.builder()
-                .id(t.getId())
+                .ticket_id(t.getId())
                 .expectedAmount(t.getExpectedAmount())
                 .car(t.getCar().getName())
                 .userName(t.getUser().getFirstName())
                 .build();
     }
-
-
 }
